@@ -1,5 +1,5 @@
 const navbar_template = `
-    <nav class="navbar navbar-expand-lg fixed-top bg-cambrige-blue">
+    <nav class="navbar navbar-expand-lg fixed-top bg-cambridge-blue">
         <div class="container-fluid">
             <div class="navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav mb-2 mb-lg-0 w-100 d-flex flex-row justify-content-center" id="navbar-options-menu">

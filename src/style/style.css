@@ -13,13 +13,13 @@
 .bg-eggshell{background-color: var(--eggshell);}
 .bg-sienna{background-color: var(--burnt-sienna);}
 .bg-delft-blue{background-color: var(--delft-blue);}
-.bg-cambrige-blue{background-color: var(--cambridge-blue);}
+.bg-cambridge-blue{background-color: var(--cambridge-blue);}
 .bg-sunset{background-color: var(--sunset);}
 
 .text-eggshell{color: var(--eggshell);}
 .text-sienna{color: var(--burnt-sienna);}
 .text-delft-blue{color: var(--delft-blue);}
-.text-cambrige-blue{color: var(--cambridge-blue);}
+.text-cambridge-blue{color: var(--cambridge-blue);}
 .text-sunset{color: var(--sunset);}
 
 *

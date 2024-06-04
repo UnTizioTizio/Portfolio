@@ -17,49 +17,40 @@
         <div class="profile-picture-container" id="profile-picture-button" type="button" data-bs-toggle="modal" data-bs-target="#info-modal">
             <img src="src/images/propic.jpg" alt="Foto profilo">
         </div>
+        <!-- Modal -->
         <div class="modal fade" id="info-modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5">Info</h1>
+            <div class="modal-dialog modal-dialog-centered d-flex flex-column justify-content-center">
+                <div class="modal-content" style="width: 90vw;">
+                    <div class="modal-header bg-cambridge-blue">
+                        <h1 class="modal-title fs-5 text-eggshell">Info</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <!-- Carousel -->
-                    <section id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <!-- Personal Data -->
-                            <div class="modal-body d-flex flex-row justify-content-between">
-                                <div class="profile-picture-container">
-                                    <img src="src/images/propic.jpg" alt="Foto profilo">
-                                </div>
-                                <div class="text-end" style="padding-left: 18px;">
-                                    <h2>Ludovico Iannello</h2>
-                                    <h6>ludovico.iannello05@gmail.com</h6>
-                                    <h6>ITT Ettore Majorana Milazzo</h6>
-                                    <h6>+39 329 669 8691</h6>
-                                    <h6>31 / 10 / 2005</h6>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                          </div>
-                          <div class="carousel-item">
-                          </div>
+                    <div class="modal-body d-flex flex-row justify-content-between" style="height: 30rem; padding-left: 6rem; padding-right: 6rem;">
+                        <div class="profile-picture-container">
+                            <img src="src/images/propic.jpg" alt="Foto profilo">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                    </section>
+                        <div class="text-start" style="padding-left: 18px;">
+                            <h3>Dati Personali</h3>
+                            <hr>
+                            <h6>Ludovico Iannello</h6>
+                            <h6>ludovico.iannello05@gmail.com</h6>
+                            <h6>+39 329 669 8691</h6>
+                            <h6>31 / 10 / 2005</h6>
+                            <h3>Formazione e Studio</h3>
+                            <hr>
+                            <h6>ITT Ettore Majorana Milazzo</h6>
+                            <h6>Cosa ho imparato:</h6>
+                            <ul>
+                                <li>Le basi della programmazione</li>
+                                <li>Conoscenze generali sul funzionamento e struttura di una rete</li>
+                                <li>Realizzazione di progetti IoT</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <h1>Ludovico Iannello</h1>
+        <h1>Click Me!</h1>
         <section class="w-75 mt-3" id="skills-section">
         </section>
     </main>

@@ -41,3 +41,14 @@
 {
     opacity: 1;
 }
+
+@media (max-width: 576px) 
+{
+    .skill-card > img
+    {
+        width: 16rem; 
+        height: 12rem;
+    }
+
+    .skill-card-overlay > div{font-size: 1.25rem;}
+}
