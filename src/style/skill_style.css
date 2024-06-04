@@ -10,6 +10,14 @@
     transition: transform 0.5s ease;
 }
 
+.skill-card > img
+{
+    width: 30rem; 
+    height: 26rem;
+}
+
+.skill-card:hover{transform: scale(1.05);}
+
 .skill-card-overlay
 {
     position: absolute;
@@ -28,10 +36,6 @@
     color: white;
 }
 
-.skill-card:hover
-{
-    transform: scale(1.05);
-}
 
 .skill-card:hover .skill-card-overlay
 {

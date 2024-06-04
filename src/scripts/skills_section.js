@@ -38,8 +38,8 @@ const skills_list = [
 ];
 
 const card_template = (parameter) => `
-    <div class="card m-3 skill-card" type="button" data-bs-toggle="modal" data-bs-target="#${parameter.modal.ID}">
-        <img class="card-img img-fluid object-fit-cover" style="width: 30rem; height: 26rem" src="${parameter.src}" alt="${parameter.title}">
+    <div class="card m-2 skill-card" type="button" data-bs-toggle="modal" data-bs-target="#${parameter.modal.ID}">
+        <img class="card-img img-fluid object-fit-cover" src="${parameter.src}" alt="${parameter.title}">
         <div class="skill-card-overlay" style="background-color:${parameter.overlay_color};">
             <div>${parameter.title}</div>
         </div>

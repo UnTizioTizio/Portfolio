@@ -1,27 +1,27 @@
 const navbar_template = `
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg fixed-top bg-cambrige-blue">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-options-menu">
-                </ul>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mb-2 mb-lg-0 w-100 d-flex flex-row justify-content-center" id="navbar-options-menu">
+                </div>
             </div>
         </div>
     </nav>
 `;
 
 const navbar_option_template = (parameter) => `
-    <li class="nav-item">
-        <a class="nav-link active" href="${parameter.href}">${parameter.text}</a>
-    </li>
+    <div class="mx-2 text-center" style="width: 6.2rem;">
+        <a class="nav-link active" href="${parameter.href}" type="button" data-bs-toggle="modal" data-bs-target="#${parameter.modal}">
+            <i class="d-block text-eggshell bi ${parameter.icon}" style="font-size: 1.25rem;"></i>
+            <span class="d-none d-sm-block text-eggshell">${parameter.text}</span>
+        </a>
+    </div>
 `;
 
 const navbar_option_list = [
-    {text: "Home", href: "#"},
-    {text: "Skills", href: "#"},
-    {text: "Certifications", href: "#"},
+    {text: "Info", href: "#", modal: "info-modal", icon: "bi-info-circle"},
+    {text: "Skills", href: "#skills-section", modal: "#", icon: "bi-briefcase"},
+    {text: "Certifications", href: "#", modal: "#", icon: "bi-mortarboard"},
 ];
 
 window.addEventListener("load", () => {
