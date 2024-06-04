@@ -5,7 +5,7 @@ const skills_list = [
         overlay_color: "#27aae380",
         modal:{
             ID: "web-dev-modal",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo atque ipsa sequi culpa nemo mollitia quia cumque quaerat eum ipsum error ab sapiente deleniti quo iusto eos, labore nihil?"
+            text: "Grazie al corso NGW per Developer organizzato dall'azienda Expleo, ho acquisito competenze necessarie per la realizzazione di applicazioni Fullstack."
         }
     },
     {
