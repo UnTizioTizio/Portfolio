@@ -1,45 +1,42 @@
 const skills_list = [
     {
         src: "src/images/Web_dev.jpg", 
-        title: "Web Dev",
+        title: "Web Dev (2023)",
         overlay_color: "#27aae380",
         modal:{
             ID: "web-dev-modal",
             color: "#27aae3",
-            text: "Grazie al corso NGW per Developer organizzato dall'azienda Expleo, ho acquisito competenze necessarie per la realizzazione di applicazioni Fullstack."
+            text: `Grazie al corso NGW per Developer organizzato dall'azienda Expleo, ho acquisito competenze necessarie per la realizzazione di applicazioni Fullstack<br>
+                   (Front-End: HTML, CSS e Bootstrap, Javascript. Back-end: phpMyAdmin, FastAPI)`
         }
     },
     {
         src: "src/images/gamedev2.png", 
-        title: "Game Dev",
+        title: "Game Dev (2021)",
         overlay_color: "#1e1e1e80",
         modal:{
             ID: "game-dev-modal",
             color: "#1e1e1e",
-            text: "Sin da piccolo ho sempre avuto la passione per i videogiochi. Dal 2021 fino ad oggi studio da autodidatta e realizzo piccoli progetti con Unity"
+            text: `Sin da piccolo ho sempre avuto la passione per i videogiochi. Dal 2021 fino ad oggi 
+                   studio da autodidatta e realizzo piccoli progetti con Unity, e costantemente mi
+                    documento su algoritmi e design patterns per ottimizzare il mio lavoro`
         }
     },
     {
         src: "src/images/ESP8266.jpg", 
-        title: "IoT",
+        title: "IoT (2023)",
         overlay_color: "#33bd9680",
         modal:{
             ID: "iot-modal",
             color: "#33bd96",
             text: `Durante il mio percorso scolastico ho sviluppato competenze per la creazione di 
                    progetti IoT, utilizzando schede elettroniche come Arduino o NodeMCU basate sul 
-                   chip ESP8266.<br>
-                   Il progetto più sostanziale che ho realizzato si occpa dell'accensione e spegnimento
-                   di un LED da remoto, utilizzando due schede ESP8266: la prima è configurata come 
-                   web server a cui l'utente può connettersi e accedere ad una pagina web per il 
-                   controllo del LED; la seconda invece riceve il comando trasmesso dall'utente e 
-                   accende o spegne il LED.<br>
-                   Qui potete trovare la repository su Git Hub`
+                   chip ESP8266.<br>`
         }
     },
     {
         src: "src/images/Blender model.jpg", 
-        title: "Blender",
+        title: "Blender (2021)",
         overlay_color: "#eb770080",
         modal:{
             ID: "blender-modal",
@@ -67,7 +64,7 @@ const modal_template = (parameter) => `
                     <h1 class="modal-title fs-5 text-eggshell">${parameter.title}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">${parameter.modal.text}</div>
+                <div class="modal-body text-start fs-5">${parameter.modal.text}</div>
             </div>
         </div>
     </div>

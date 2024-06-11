@@ -2,6 +2,7 @@
 {
     --skill-section-width: 90%;
     --skill-card-width: 40%;
+    --skill-card-min-width: 262px;
 }
 
 #skills-section
@@ -15,12 +16,13 @@
 .skill-card
 {
     width: var(--skill-card-width);
+    min-width: var(--skill-card-min-width);
     transition: transform 0.5s ease;
 }
 
 .skill-card > img
 {
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
@@ -40,7 +42,7 @@
 .skill-card-overlay > span
 {
     display: block;
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: calc(2em + 1vw);
     font-weight: 900;
     color: white;
 }
@@ -53,10 +55,15 @@
 
 @media (max-width: 576px) 
 {
-    .skill-card > img
+    #skills-section
     {
-        width: 16rem; 
-        height: 12rem;
+        width: 100%;
+    }
+
+    .skill-card
+    {
+        width: 47%;
+        min-width: calc(var(--skill-card-min-width) / 1.5);
     }
 
     .skill-card-overlay > div{font-size: 1.25rem;}
