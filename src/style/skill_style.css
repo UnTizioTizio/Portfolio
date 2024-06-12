@@ -1,7 +1,7 @@
 :root
 {
     --skill-section-width: 90%;
-    --skill-card-width: 40%;
+    --skill-card-width: 35%;
     --skill-card-min-width: 262px;
 }
 
@@ -16,6 +16,7 @@
 .skill-card
 {
     width: var(--skill-card-width);
+    aspect-ratio: 4/3;
     min-width: var(--skill-card-min-width);
     transition: transform 0.5s ease;
 }
@@ -62,7 +63,8 @@
 
     .skill-card
     {
-        width: 47%;
+        width: 42%;
+        aspect-ratio: 1/1;
         min-width: calc(var(--skill-card-min-width) / 1.5);
     }
 
